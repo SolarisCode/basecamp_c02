@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: coder <coder@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/08 19:34:36 by coder             #+#    #+#             */
-/*   Updated: 2021/10/08 19:45:25 by coder            ###   ########.fr       */
+/*   Created: 2021/10/08 19:45:42 by coder             #+#    #+#             */
+/*   Updated: 2021/10/08 20:10:46 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include <stdio.h>
-int	ft_str_is_numeric(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	count;
 	int	flag;
@@ -20,7 +20,7 @@ int	ft_str_is_numeric(char *str)
 	count = 0;
 	while (str[count] != '\0')
 	{
-		if (str[count] < 48 || str[count] > 57)
+		if (str[count] < 97 || str[count] > 122)
 			flag = 0;
 		count ++;
 	}
@@ -31,7 +31,7 @@ int	ft_str_is_numeric(char *str)
 // {
 // 	int	i;
 
-// 	i = ft_str_is_numeric("123");
+// 	i = ft_str_is_lowercase("helloworld");
 // 	printf("i= %d \n", i);
 // 	return (0);
 // }
